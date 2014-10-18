@@ -1,4 +1,5 @@
-scala-exercises
-===============
+# Scala Exercises
 
-Scala Exercises
+Suggested order:
+
+  * Fac
