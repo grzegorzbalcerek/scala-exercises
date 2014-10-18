@@ -5,3 +5,4 @@ Suggested order:
   * Fac
   * Fib
   * Mult
+  * Figures
