@@ -8,3 +8,4 @@ Suggested order:
   * Figures
   * Complex
   * Forloop
+  * Tailrec
