@@ -39,7 +39,7 @@ method.
 FiguresObjects
 --------------
 
-Make it possible to create instances of the `Rectangle`; `Triangle`
+Make it possible to create instances of the `Rectangle`, `Triangle`
 and `Square` classes without using the `new` keyword and — in addition
 to that − make it possible to create a square with the given
 circumference.
@@ -49,8 +49,4 @@ FiguresEquals
 
 Add methods for comparing figures. Two squares created by different
 methods should be treated as different. The equality relation should
-be simmetric and transitive.
-
-
-
-
+be reflexive, symmetric and transitive.

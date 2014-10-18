@@ -40,7 +40,7 @@ Zdefiniować klasę `Square` reprezentującą kwadraty. Nadpisać metodę
 FiguresObjects
 --------------
 
-Dodać możliwość tworzenia instancji klas `Rectangle`; `Triangle` i
+Dodać możliwość tworzenia instancji klas `Rectangle`, `Triangle` i
 `Square` bez użycia słowa kluczowego `new` oraz dodatkowo możliwość
 utworzenia kwadratu o określonym obwodzie.
 
@@ -49,7 +49,8 @@ FiguresEquals
 
 Dodać metody pozwalające na porównywanie figur ze sobą. Prostokąt
 mający równe boki powinien być traktowany jako równy z odpowiednim
-kwadratem. Relacja równości powinna być symetryczna i przechodnia.
+kwadratem. Relacja równości powinna być zwrotna, symetryczna i
+przechodnia.
 
 
 
