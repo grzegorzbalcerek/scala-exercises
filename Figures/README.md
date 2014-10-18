@@ -14,33 +14,33 @@ figures. Case classes and case objects cannot be used.
 AbstractFigure
 --------------
 
-Define the =Figure= abstract class representing geometric figures and
-two abstract methods =area= and =circum= for calculating the area and
+Define the `Figure` abstract class representing geometric figures and
+two abstract methods `area` and `circum` for calculating the area and
 circumferece of the figure.
 
 Rectangle
 ---------
 
-Define the =Rectangle= class representing rectangles. Override the
-=toString= method.
+Define the `Rectangle` class representing rectangles. Override the
+`toString` method.
 
 Triangle
 --------
 
-Define a =Triangle= class representing triangles. Override the
-=toString= method. A useful method: =math.sqrt=.
+Define a `Triangle` class representing triangles. Override the
+`toString` method. A useful method: `math.sqrt`.
 
 Square
 ------
 
-Define a =Square= class representing squares. Override the =toString=
+Define a `Square` class representing squares. Override the `toString`
 method.
 
 FiguresObjects
 --------------
 
-Make it possible to create instances of the =Rectangle=; =Triangle=
-and =Square= classes without using the =new= keyword and — in addition
+Make it possible to create instances of the `Rectangle`; `Triangle`
+and `Square` classes without using the `new` keyword and — in addition
 to that − make it possible to create a square with the given
 circumference.
 

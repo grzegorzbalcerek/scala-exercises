@@ -15,33 +15,33 @@ przypadków.
 AbstractFigure
 --------------
 
-Zdefiniować klasę abstrakcyjną =Figure= reprezentującą figury
-geometryczne z dwoma abstrakcyjnymi metodami =area= i =circum=
+Zdefiniować klasę abstrakcyjną `Figure` reprezentującą figury
+geometryczne z dwoma abstrakcyjnymi metodami `area` i `circum`
 służącymi do obliczenia pola i obwodu figury.
 
 Rectangle
 ---------
 
-Zdefiniować klasę =Rectangle= reprezentującą prostokąty. Nadpisać
-metodę =toString=.
+Zdefiniować klasę `Rectangle` reprezentującą prostokąty. Nadpisać
+metodę `toString`.
 
 Triangle
 --------
 
-Zdefiniować klasę =Triangle= reprezentującą prostokąty. Nadpisać
-metodę =toString=. Przydatna metoda: =math.sqrt=.
+Zdefiniować klasę `Triangle` reprezentującą prostokąty. Nadpisać
+metodę `toString`. Przydatna metoda: `math.sqrt`.
 
 Square
 ------
 
-Zdefiniować klasę =Square= reprezentującą kwadraty. Nadpisać metodę
-=toString=.
+Zdefiniować klasę `Square` reprezentującą kwadraty. Nadpisać metodę
+`toString`.
 
 FiguresObjects
 --------------
 
-Dodać możliwość tworzenia instancji klas =Rectangle=; =Triangle= i
-=Square= bez użycia słowa kluczowego =new= oraz dodatkowo możliwość
+Dodać możliwość tworzenia instancji klas `Rectangle`; `Triangle` i
+`Square` bez użycia słowa kluczowego `new` oraz dodatkowo możliwość
 utworzenia kwadratu o określonym obwodzie.
 
 FiguresEquals
