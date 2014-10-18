@@ -6,3 +6,4 @@ Suggested order:
   * Fib
   * Mult
   * Figures
+  * Complex
