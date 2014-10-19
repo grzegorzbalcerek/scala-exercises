@@ -10,3 +10,4 @@ Suggested order:
   * Forloop
   * Tailrec
   * Fibstream
+  * FieldClick
