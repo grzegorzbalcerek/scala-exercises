@@ -9,3 +9,4 @@ Suggested order:
   * Complex
   * Forloop
   * Tailrec
+  * Fibstream
