@@ -11,3 +11,4 @@ Suggested order:
   * Tailrec
   * Fibstream
   * FieldClick
+  * Chain
