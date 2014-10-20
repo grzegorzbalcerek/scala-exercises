@@ -20,3 +20,4 @@ Suggested order:
   * Optioon
   * Liist
   * Eq
+  * Monoid
