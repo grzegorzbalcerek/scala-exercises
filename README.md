@@ -19,3 +19,4 @@ Suggested order:
   * Implicits
   * Optioon
   * Liist
+  * Eq
