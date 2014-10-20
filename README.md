@@ -22,3 +22,4 @@ Suggested order:
   * Eq
   * Monoid
   * Functor
+  * Applic
