@@ -21,3 +21,4 @@ Suggested order:
   * Liist
   * Eq
   * Monoid
+  * Functor
