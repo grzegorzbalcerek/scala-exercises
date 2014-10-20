@@ -17,3 +17,4 @@ Suggested order:
   * Trampoline
   * Collections
   * Implicits
+  * Optioon
