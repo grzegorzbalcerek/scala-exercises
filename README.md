@@ -25,3 +25,4 @@ Suggested order:
   * Applic
   * Monad
   * Foldable
+  * Travers

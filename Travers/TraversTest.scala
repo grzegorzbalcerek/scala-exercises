@@ -1,0 +1,32 @@
+object TraversTest extends App {
+  import Travers._
+  val a = Id(2)
+  val f: Int => Option[Int] = x => Some(x*x)
+  val af = traverse(a)(f)
+  import Functor._
+  assert(map(a)(_+5) == Id(7), "map(a)(_+5) == Id(7)")
+  assert(map(a)(f) == Id(Some(4)), "map(a)(f) == Id(Some(4))")
+  val b: Option[Int] = Some(5)
+  val g: Int => Id[Int] = x => Id(x+x)
+  val bg = traverse(b)(g)
+  assert(sequence(af) == Id(Some(4)), "sequence(af) == Id(Some(4))")
+  assert(sequence(bg) == Some(Id(10)), "sequence(bg) == Some(Id(10))")
+  val c: List[Option[Int]] = List(Some(1), Some(5))
+  val d: List[Option[Int]] = List(Some(1), None, Some(7))
+  val c1 = sequence(c)
+  assert(sequence(c1) == List(Some(1), Some(5)), "sequence(c1) == List(Some(1), Some(5))")
+  val d1 = sequence(d)
+  assert(sequence(d1) == List(None), "sequence(d1) == List(None)")
+  val t: Tree[Int] = Node(Node(Leaf,4,Leaf),7,Node(Leaf,1,Leaf))
+  assert(traverse(t)(f).toString == "Some(<<. 16 .> 49 <. 1 .>>)", "traverse(t)(f) == Some(<<. 16 .> 49 <. 1 .>>)")
+  val u: Tree[List[Int]] = Node(Leaf, List(2,3), Node(Leaf, List(5,6), Leaf))
+  assert(sequence(u).toString == "List(<. 2 <. 5 .>>, <. 3 <. 5 .>>, <. 2 <. 6 .>>, <. 3 <. 6 .>>)", "sequence(u) == List(<. 2 <. 5 .>>, <. 3 <. 5 .>>, <. 2 <. 6 .>>, <. 3 <. 6 .>>)")
+  import Foldable._
+  val r: Tree[Int] = Node(Node(Leaf,4,Leaf),7,Node(Leaf,1,Leaf))
+  assert(foldMap(r)(x => All(x > 2)) == All(false), "foldMap(r)(x => All(x > 2)) == All(false)")
+  assert(foldMap(r)(x => All(x >= 1)) == All(true), "foldMap(r)(x => All(x >= 1)) == All(true)")
+  assert(foldMap(r)(x => Anything(x == 5)) == Anything(false), "foldMap(r)(x => Anything(x == 5)) == Anything(false)")
+  assert(foldMap(r)(identity) == 12, "foldMap(r)(identity) == 12")
+  assert(foldMap(r)(_.toString) == "471", "foldMap(r)(_.toString) == 471")
+  assert(toList(r) == List(4, 7, 1), "toList(r) == List(4, 7, 1)")
+}
