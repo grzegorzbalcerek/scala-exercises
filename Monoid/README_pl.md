@@ -5,8 +5,7 @@ Opis
 ----
 
 Ćwiczenie dotyczy klasy typu *monoid* reprezentowanej przez cechę
-`Monoid` z pliku *Monoid.scala*.  Plik zawiera również definicje klas
-`Anything` i `All` opakowujących wartości typu `Boolean`.
+`Monoid` z pliku *Monoid.scala*.
 
 Monoid posiada element neutralny `mempty` (inne nazwy: `mzero`; `0`;
 `∅`) oraz dwuargumentową operację `mappend` (`madd`; `|+|`; `⊕`) oraz

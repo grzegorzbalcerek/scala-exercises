@@ -5,9 +5,7 @@ Description
 -----------
 
 The exercise is about the *monoid* class type represented by the
-`Monoid` trait from the *Monoid.scala* file.  The file includes
-definitions of the `Anything` and `All` classes which wrap `Boolean`
-values.
+`Monoid` trait from the *Monoid.scala* file.
 
 A monoid has a neutral element `mempty` (other names: `mzero`; `0`;
 `∅`) and a binary operation `mappend` (`madd`; `|+|`; `⊕`) and it
