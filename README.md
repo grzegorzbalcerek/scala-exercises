@@ -14,3 +14,4 @@ Suggested order:
   * Chain
   * DiffList
   * Using
+  * Trampoline
