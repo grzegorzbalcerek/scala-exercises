@@ -23,3 +23,4 @@ Suggested order:
   * Monoid
   * Functor
   * Applic
+  * Monad
