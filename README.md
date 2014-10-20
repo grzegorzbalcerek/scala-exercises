@@ -24,3 +24,4 @@ Suggested order:
   * Functor
   * Applic
   * Monad
+  * Foldable
