@@ -16,3 +16,4 @@ Suggested order:
   * Using
   * Trampoline
   * Collections
+  * Implicits
