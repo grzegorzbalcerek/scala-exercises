@@ -15,3 +15,4 @@ Suggested order:
   * DiffList
   * Using
   * Trampoline
+  * Collections
