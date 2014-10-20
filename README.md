@@ -12,3 +12,4 @@ Suggested order:
   * Fibstream
   * FieldClick
   * Chain
+  * DiffList
